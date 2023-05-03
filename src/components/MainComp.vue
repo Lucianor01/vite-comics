@@ -3,6 +3,29 @@ export default {
     name: "MainComp",
     data() {
         return {
+
+            linkBuy: [
+                {
+                    name: "DIGITAL COMICS",
+                    url: "buy-comics-digital-comics.png",
+                },
+                {
+                    name: "DC MERCHANDISE",
+                    url: "buy-comics-merchandise.png",
+                },
+                {
+                    name: "SUBSCRIPTION",
+                    url: "buy-comics-subscriptions.png",
+                },
+                {
+                    name: "COMIC SHOP LOCATOR",
+                    url: "buy-comics-shop-locator.png",
+                },
+                {
+                    name: "DC POWER VISA",
+                    url: "buy-dc-power-visa.svg",
+                },
+            ]
         }
     },
     methods: {

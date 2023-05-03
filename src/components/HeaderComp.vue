@@ -3,6 +3,48 @@ export default {
     name: "HeaderComp",
     data() {
         return {
+            navBar: [
+                {
+                    name: "CHARACTERS",
+                    url: "/characters"
+                },
+                {
+                    name: "COMICS",
+                    url: "/comics"
+                },
+                {
+                    name: "MOVIES",
+                    url: "/movies"
+                },
+                {
+                    name: "TV",
+                    url: "/tv"
+                },
+                {
+                    name: "GAMES",
+                    url: "/games"
+                },
+                {
+                    name: "COLLECTIBLES",
+                    url: "/collectibles"
+                },
+                {
+                    name: "VIDEOS",
+                    url: "/videos"
+                },
+                {
+                    name: "FANS",
+                    url: "/fans"
+                },
+                {
+                    name: "NEWS",
+                    url: "/news"
+                },
+                {
+                    name: "SHOP",
+                    url: "/characters"
+                },
+            ]
         }
     },
     methods: {
@@ -14,41 +56,15 @@ export default {
 <template>
     <header>
         <nav>
+            <!--? IMMAGINE NAVBAR -->
             <div>
                 <img src="../../public/img/dc-logo.png" alt="Logo">
             </div>
-
+            <!--? LISTA NAVBAR -->
             <div>
                 <ul>
-                    <li>
-                        <a href="#"><strong>CHARACTERS</strong></a>
-                    </li>
-                    <li>
-                        <a href="#"><strong>COMICS</strong></a>
-                    </li>
-                    <li>
-                        <a href="#"><strong>MOVIES</strong></a>
-                    </li>
-                    <li>
-                        <a href="#"><strong>TV</strong></a>
-                    </li>
-                    <li>
-                        <a href="#"><strong>GAMES</strong></a>
-                    </li>
-                    <li>
-                        <a href="#"><strong>COLLECTIBLES</strong></a>
-                    </li>
-                    <li>
-                        <a href="#"><strong>VIDEOS</strong></a>
-                    </li>
-                    <li>
-                        <a href="#"><strong>FANS</strong></a>
-                    </li>
-                    <li>
-                        <a href="#"><strong>NEWS</strong></a>
-                    </li>
-                    <li>
-                        <a href="#"><strong>SHOP</strong></a>
+                    <li v-for="(navBarName, index) in navBar" :key="index">
+                        <a :href="navBarName.url"><strong>{{ navBarName.name }}</strong></a>
                     </li>
                 </ul>
             </div>
