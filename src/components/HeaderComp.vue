@@ -21,34 +21,34 @@ export default {
             <div>
                 <ul>
                     <li>
-                        <a href="#">CHARACTERS</a>
+                        <a href="#"><strong>CHARACTERS</strong></a>
                     </li>
                     <li>
-                        <a href="#">COMICS</a>
+                        <a href="#"><strong>COMICS</strong></a>
                     </li>
                     <li>
-                        <a href="#">MOVIES</a>
+                        <a href="#"><strong>MOVIES</strong></a>
                     </li>
                     <li>
-                        <a href="#">TV</a>
+                        <a href="#"><strong>TV</strong></a>
                     </li>
                     <li>
-                        <a href="#">GAMES</a>
+                        <a href="#"><strong>GAMES</strong></a>
                     </li>
                     <li>
-                        <a href="#">COLLECTIBLES</a>
+                        <a href="#"><strong>COLLECTIBLES</strong></a>
                     </li>
                     <li>
-                        <a href="#">VIDEOS</a>
+                        <a href="#"><strong>VIDEOS</strong></a>
                     </li>
                     <li>
-                        <a href="#">FANS</a>
+                        <a href="#"><strong>FANS</strong></a>
                     </li>
                     <li>
-                        <a href="#">NEWS</a>
+                        <a href="#"><strong>NEWS</strong></a>
                     </li>
                     <li>
-                        <a href="#">SHOP</a>
+                        <a href="#"><strong>SHOP</strong></a>
                     </li>
                 </ul>
             </div>
