@@ -1,0 +1,47 @@
+header {
+    nav {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+
+        div {
+            img {}
+        }
+
+        div {
+            ul {
+
+                display: flex;
+                gap: 10px;
+
+                li {
+                    list-style: none;
+                    height: 100%;
+
+                    &:hover {
+                        border-bottom: 2px solid blue;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+
+    .container_content {
+        height: 400px;
+    }
+
+    .section_2 {
+        display: flex;
+    }
+
+}

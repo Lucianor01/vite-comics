@@ -11,10 +11,11 @@ export default {
     FooterComp
   }
 }
-
 </script>
-  <HeaderComp/>
-<template></template>
+<template>
+  <HeaderComp />
+  <MainComp />
+</template>
 
 <style lang="scss">
 @use "./style/main.scss" as *;
