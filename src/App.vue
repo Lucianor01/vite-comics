@@ -15,6 +15,7 @@ export default {
 <template>
   <HeaderComp />
   <MainComp />
+  <FooterComp />
 </template>
 
 <style lang="scss">

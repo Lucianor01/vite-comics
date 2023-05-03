@@ -41,7 +41,19 @@ main {
     }
 
     .section_2 {
-        display: flex;
+        justify-content: space-between;
+
+        .section2_img {
+            width: 45px;
+        }
+
+        .fs {
+            font-size: 13px;
+        }
+
+        #section2_img {
+            width: 32px;
+        }
     }
 
 }
