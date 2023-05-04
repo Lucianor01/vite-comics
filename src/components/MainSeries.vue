@@ -40,6 +40,7 @@ export default {
 
                 img {
                     width: 100%;
+                    min-width: 150px;
                     height: 300px;
                 }
 

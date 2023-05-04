@@ -143,12 +143,22 @@ export default {
                 <div class="row container_lista">
                     <!--? LISTA DC COMICS -->
                     <div class="col-4">
-                        <h2 class="text-light">{{ listaComics[0].title }}</h2>
-                        <ul>
-                            <li v-for="(comics, index) in listaComics[0].linkComics" :key="index">
-                                <a :href="comics.url">{{ comics.name }}</a>
-                            </li>
-                        </ul>
+                        <div>
+                            <h2 class="text-light">{{ listaComics[0].title }}</h2>
+                            <ul>
+                                <li v-for="(comics, index) in listaComics[0].linkComics" :key="index">
+                                    <a :href="comics.url">{{ comics.name }}</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="text-light">{{ listaComics[3].title }}</h2>
+                            <ul>
+                                <li v-for="(shop, index) in listaComics[3].linkComics" :key="index">
+                                    <a :href="shop.url">{{ shop.name }}</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <!--? LISTA DC -->
                     <div class="col-4">
@@ -169,14 +179,14 @@ export default {
                         </ul>
                     </div>
                     <!--? LISTA SHOP -->
-                    <div class="col-4">
+                    <!-- <div class="col-4">
                         <h2 class="text-light">{{ listaComics[3].title }}</h2>
                         <ul>
                             <li v-for="(shop, index) in listaComics[3].linkComics" :key="index">
                                 <a :href="shop.url">{{ shop.name }}</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>

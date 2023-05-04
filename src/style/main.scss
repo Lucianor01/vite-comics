@@ -77,6 +77,9 @@ main {
 
         a {
 
+            display: flex;
+            align-items: center;
+
             &:hover {
                 text-decoration-color: white;
             }
@@ -114,6 +117,8 @@ footer {
 
         .container_lista {
 
+            min-width: 43%;
+
             h2 {
                 font-size: 25px;
             }
@@ -132,6 +137,7 @@ footer {
 
                         &:hover {
                             color: white;
+                            text-decoration: underline;
                         }
                     }
                 }
@@ -163,11 +169,29 @@ footer {
             .container_social {
 
                 a {
-                    img {
-                        &:hover {
-                            border-radius: 100%;
-                            filter: brightness(2);
-                        }
+                    &:nth-child(2):hover {
+                        border-radius: 100%;
+                        background-color: #1877F2;
+                    }
+
+                    &:nth-child(3):hover {
+                        border-radius: 100%;
+                        background-color: #1DA1F2;
+                    }
+
+                    &:nth-child(4):hover {
+                        border-radius: 100%;
+                        background-color: #CD201F;
+                    }
+
+                    &:nth-child(5):hover {
+                        border-radius: 100%;
+                        background-color: #BD081C;
+                    }
+
+                    &:nth-child(6):hover {
+                        border-radius: 100%;
+                        background-color: #3AAF85;
                     }
                 }
             }
