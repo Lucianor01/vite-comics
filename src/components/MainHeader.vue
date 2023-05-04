@@ -98,8 +98,20 @@ export default {
             <img src="../../public/img/jumbotron.jpg" alt="Jumbotron">
         </div>
     </section>
-    <section>
-        <MainSeries />
+    <section id="sectionCSeries">
+        <div id="containerSeries">
+            <div id="titleCS" class="position-absolute">
+                <h3>CURRENT SERIES</h3>
+            </div>
+            <div class="container py-5">
+                <div class="row">
+                    <MainSeries v-for="(series, index) in linkSeries" :key="index" :seriesComics="series" />
+                </div>
+            </div>
+            <div class="text-center pb-5">
+                <a href="#">LOAD MORE</a>
+            </div>
+        </div>
     </section>
 </template>
 
@@ -112,6 +124,41 @@ section {
             height: 400px;
             object-fit: cover;
             object-position: top;
+        }
+    }
+}
+
+#sectionCSeries {
+
+    #containerSeries {
+
+        #titleCS {
+            top: -25px;
+            left: 303px;
+
+
+            h3 {
+                padding: 10px 20px;
+                font-size: 25px;
+                color: white;
+                background-color: #0282f9;
+            }
+        }
+
+        div {
+
+            a {
+                padding: 10px 60px;
+                color: white;
+                background-color: #0282f9;
+                text-decoration: none;
+                font-weight: bold;
+
+                &:hover {
+                    background-color: #0282f983;
+                }
+
+            }
         }
     }
 }
