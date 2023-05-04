@@ -6,43 +6,53 @@ export default {
             navBar: [
                 {
                     name: "CHARACTERS",
-                    url: "/characters"
+                    url: "/characters",
+                    current: false
                 },
                 {
                     name: "COMICS",
-                    url: "/comics"
+                    url: "/comics",
+                    current: true
                 },
                 {
                     name: "MOVIES",
-                    url: "/movies"
+                    url: "/movies",
+                    current: false
                 },
                 {
                     name: "TV",
-                    url: "/tv"
+                    url: "/tv",
+                    current: false
                 },
                 {
                     name: "GAMES",
-                    url: "/games"
+                    url: "/games",
+                    current: false
                 },
                 {
                     name: "COLLECTIBLES",
-                    url: "/collectibles"
+                    url: "/collectibles",
+                    current: false
                 },
                 {
                     name: "VIDEOS",
-                    url: "/videos"
+                    url: "/videos",
+                    current: false
                 },
                 {
                     name: "FANS",
-                    url: "/fans"
+                    url: "/fans",
+                    current: false
                 },
                 {
                     name: "NEWS",
-                    url: "/news"
+                    url: "/news",
+                    current: false
                 },
                 {
                     name: "SHOP",
-                    url: "/shop"
+                    url: "/shop",
+                    current: false
                 },
             ]
         }
@@ -63,8 +73,9 @@ export default {
             <!--? LISTA NAVBAR -->
             <div>
                 <ul>
-                    <li v-for="(navBarName, index) in navBar" :key="index">
-                        <a :href="navBarName.url"><strong>{{ navBarName.name }}</strong></a>
+                    <li v-for="(navBarName, index) in navBar" :key="index" :class="navBarName.current ? 'active' : ''">
+                        <a :href="navBarName.url" :class="navBarName.current ? 'active' : ''"><strong>{{ navBarName.name
+                        }}</strong></a>
                     </li>
                 </ul>
             </div>

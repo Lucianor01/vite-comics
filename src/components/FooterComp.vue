@@ -139,8 +139,8 @@ export default {
     <footer>
         <!--? SECTION FOOTER 1 -->
         <section class="p-4 section_1">
-            <div class="container-fluid d-flex position-relative">
-                <div class="row">
+            <div class="container d-flex">
+                <div class="row container_lista">
                     <!--? LISTA DC COMICS -->
                     <div class="col-4">
                         <h2 class="text-light">{{ listaComics[0].title }}</h2>
@@ -178,14 +178,11 @@ export default {
                         </ul>
                     </div>
                 </div>
-                <div class="img_footer">
-                    <img src="../../public/img/dc-logo-bg.png" alt="">
-                </div>
             </div>
         </section>
         <!--? SECTION FOOTER 2 -->
         <section class="section_2">
-            <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="container d-flex justify-content-between align-items-center">
                 <div>
                     <button type="button" class="p-2">SIGN-UP NOW!</button>
                 </div>

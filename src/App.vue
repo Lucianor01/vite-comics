@@ -1,5 +1,6 @@
 <script >
 import HeaderComp from './components/HeaderComp.vue';
+import MainHeader from './components/MainHeader.vue';
 import MainComp from './components/MainComp.vue';
 import FooterComp from './components/FooterComp.vue';
 
@@ -7,6 +8,7 @@ export default {
   name: "App",
   components: {
     HeaderComp,
+    MainHeader,
     MainComp,
     FooterComp
   }
@@ -14,7 +16,10 @@ export default {
 </script>
 <template>
   <HeaderComp />
-  <MainComp />
+  <main>
+    <MainHeader />
+    <MainComp />
+  </main>
   <FooterComp />
 </template>
 
