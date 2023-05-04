@@ -42,7 +42,7 @@ export default {
                 },
                 {
                     name: "SHOP",
-                    url: "/characters"
+                    url: "/shop"
                 },
             ]
         }

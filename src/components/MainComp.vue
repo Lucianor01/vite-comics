@@ -52,7 +52,6 @@ export default {
         <section class="section_2 bg-primary">
             <div class="p-5 w-75 container">
                 <div class="row justify-content-between align-items-center">
-
                     <div v-for="(shop, index) in linkBuy" :key="index" class="col-2">
                         <a :href="shop.url">
                             <img class="me-3 section2_img" :src="path + shop.url" :alt="shop.alt"
@@ -60,7 +59,6 @@ export default {
                             <span class="text-nowrap fs text-light">{{ shop.name }}</span>
                         </a>
                     </div>
-
                 </div>
             </div>
         </section>
